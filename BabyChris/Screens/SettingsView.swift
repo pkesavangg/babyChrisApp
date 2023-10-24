@@ -37,7 +37,7 @@ struct SettingsView: View {
                                                 service.logout()
                                             }))
                 } label: {
-                    Text("Log out")
+                    Text("LOG OUT")
                         .foregroundColor(.red)
                         .fontWeight(.bold)
                 }

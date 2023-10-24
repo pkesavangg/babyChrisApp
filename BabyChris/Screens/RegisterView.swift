@@ -87,7 +87,7 @@ struct RegisterView: View {
                         } label: {
                             HStack{
                                 Spacer()
-                                Text("\(CommonConstants.register) \(Image(systemName: "arrow.right"))")
+                                Text("\(CommonConstants.register.uppercased()) \(Image(systemName: "arrow.right"))")
                                     .foregroundColor(Color("ColorWhite"))
                                     .clipShape(Rectangle())
                                     .frame(width: 300, height: 50)

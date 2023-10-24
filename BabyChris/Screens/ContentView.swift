@@ -13,6 +13,9 @@ struct ContentView: View {
     @StateObject var viewModel = NotificationViewModel()
     
     var body: some View {
+        NavigationView {
+            
+        
         VStack{
             if(accountService.isLoading){
                 ProgressView("Loading")
@@ -53,6 +56,7 @@ struct ContentView: View {
             AlertToast(type: .loading, title: viewModel.loaderMessage)
         }
     }
+}
 }
 
 

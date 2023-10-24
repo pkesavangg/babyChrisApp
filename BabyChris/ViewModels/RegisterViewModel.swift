@@ -96,9 +96,9 @@ class RegisterViewModel : ObservableObject {
             let data =  try await self.accountService.accountSignup(email: self.email.value, password: self.password.value)
             if let authResult = data {
                 DispatchQueue.main.async {
-                    toastEventsSubject.send(ToastModel(toastData: ToastModifier.ToastData(title: CommonConstants.successWithExclamation,
-                                                                                          detail: ToastMessages.registeredSuccessfully,
-                                                                                          type: .Success)))
+//                    toastEventsSubject.send(ToastModel(toastData: ToastModifier.ToastData(title: CommonConstants.successWithExclamation,
+//                                                                                          detail: ToastMessages.registeredSuccessfully,
+//                                                                                          type: .Success)))
                     loaderEventSubject.send(LoaderModel(showLoader: false))
                     self.resetForm()
                 }

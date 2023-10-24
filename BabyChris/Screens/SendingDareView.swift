@@ -44,11 +44,13 @@ struct SendingDareView: View {
                                 Button {
                                     Task{
                                         await viewModel.sendDare()
+                                        self.viewModel.dareMessage = ""
+                                        focus = nil
                                     }
-                                    focus = nil
                                 } label: {
                                     Text(viewModel.isDareAssignedAlready ? "UPDATE DARE" : "SEND DARE")
                                         .bold()
+                                        .font(.caption)
                                 }
                                 .buttonStyle(.borderedProminent)
                                 .disabled(viewModel.dareMessage.trimmingCharacters(in: .whitespaces).isEmpty)
@@ -94,6 +96,7 @@ struct SendingDareView: View {
                 }
             }
         }
+        .resignOnDrag()
     }
 }
 

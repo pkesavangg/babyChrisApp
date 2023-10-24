@@ -27,6 +27,7 @@ struct ParticipantsListView: View {
                                    await viewModel.generateMomChild()
                                 }
                             }
+                            .font(.caption)
                              .padding()
                              .buttonStyle(.borderedProminent)
                              .disabled(viewModel.participantsList.count < 3 || viewModel.isGameStarted)
@@ -38,7 +39,9 @@ struct ParticipantsListView: View {
                                 Task{
                                     await viewModel.resetGame()
                                 }
-                            }.padding()
+                            }
+                            .font(.caption)
+                            .padding()
                              .buttonStyle(.borderedProminent)
                              .disabled(!viewModel.isGameStarted)
                             Spacer()
