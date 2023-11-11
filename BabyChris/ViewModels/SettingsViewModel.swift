@@ -23,6 +23,11 @@ class SettingsViewModel: ObservableObject {
         })
     }
     
+    func getAdminDetail() -> UserDetailModel? {
+        return self.gameService.userDetails[0]
+    }
+    
+    
     deinit{
         currentUserCancellable?.cancel()
     }

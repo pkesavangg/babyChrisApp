@@ -13,6 +13,10 @@ class GameInfoViewModel: ObservableObject {
     
     init() {}
     
+    var isGameStarted: Bool {
+        return self.gameService.userDetails[0].childName != ""
+    }
+    
     func addParticipant() async {
         if(!networkMonitor.checkInternet()){
             return

@@ -10,6 +10,7 @@ import SwiftUI
 struct GameInfoView: View {
     @StateObject private var viewModel = GameInfoViewModel()
     private let service = AccountService.shared
+    @State private var showAlert = false
     var body: some View {
             VStack{
                 VStack{
@@ -53,11 +54,19 @@ struct GameInfoView: View {
                         
                     }
                 }
+                .alert(isPresented: $showAlert) {
+                    Alert(title: Text("It's too late"),
+                    message: Text("Game was started. Wait for the next game"))
+                }
                 HStack{
                     Spacer()
                     Button {
                         Task{
-                            await viewModel.addParticipant()
+                            if viewModel.isGameStarted {
+                                self.showAlert = true
+                            }else {
+                                await viewModel.addParticipant()
+                            }
                         }
                     } label: {
                         Text("JOIN")

@@ -38,9 +38,13 @@ struct LoginView: View {
                                    textFieldLabel:  "Password",
                                    errorMessage: self.viewModel.password.errorMessage,
                                    editingChanged: {isEditing in
-                            self.viewModel.password.isTouched = true
+                            DispatchQueue.main.async {
+                                self.viewModel.password.isTouched = true
+                            }
                             if (!isEditing){
-                                self.viewModel.password.isUnfocused = true
+                                DispatchQueue.main.async {
+                                    self.viewModel.password.isUnfocused = true
+                                }
                             }
                         },commit: {
                             focus = nil

@@ -49,7 +49,11 @@ class MainViewModel: ObservableObject {
     }
     
     var currentUserIsAdmin : Bool {
-        if self.currentUserDetails?.userMailId == "suresh@gmail.com" {
+        guard let currentUserMailId = self.currentUserDetails?.userMailId else {
+            return false
+        }
+        print(currentUserMailId, self.userDetails[0].userMailId,currentUserMailId ==  self.userDetails[0].userMailId)
+        if currentUserMailId ==  self.userDetails[0].userMailId{
             return true
         }
         return false

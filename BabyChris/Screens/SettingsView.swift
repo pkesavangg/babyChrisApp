@@ -30,6 +30,24 @@ struct SettingsView: View {
                     }
                 }
                 
+                
+                Section(header: Text("Admin Info")) {
+                    HStack{
+                        Image(systemName: "person.crop.circle.fill")
+                            .foregroundColor(.gray)
+                            .font(.largeTitle)
+                            .padding(.trailing, 5)
+                        VStack(alignment:.leading, spacing: 5){
+                            Text(viewModel.getAdminDetail()?.userName ?? "")
+                                .fontWeight(.bold)
+                            Text(viewModel.getAdminDetail()?.userMailId ?? "")
+                                .font(.caption2)
+                                .fontWeight(.semibold)
+                                .foregroundColor(.blue)
+                        }
+                    }
+                }
+                
                 Button {
                     alertEventsSubject.send(AlertModel(title: "Are you sure you want to logout",
                                                                                submitButtonText: "YES",
