@@ -49,10 +49,17 @@ struct SendingDareView: View {
                                     }
                                 } label: {
                                     Text(viewModel.isDareAssignedAlready ? "UPDATE DARE" : "SEND DARE")
-                                        .bold()
-                                        .font(.caption)
+
+                                    
+                                        .fontWeight(.bold)
+                                        .padding()
+                                        .frame(maxWidth: .infinity)
+                                        .background(viewModel.dareMessage.trimmingCharacters(in: .whitespaces).isEmpty ? Color.gray: Color.blue)
+                                        .opacity(viewModel.dareMessage.trimmingCharacters(in: .whitespaces).isEmpty ? 0.5: 1)
+                                        .foregroundColor(.white)
+                                        .cornerRadius(10)
                                 }
-                                .buttonStyle(.borderedProminent)
+                                //.buttonStyle(.borderedProminent)
                                 .disabled(viewModel.dareMessage.trimmingCharacters(in: .whitespaces).isEmpty)
                                 Spacer()
                             }

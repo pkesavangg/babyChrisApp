@@ -18,31 +18,47 @@ struct ParticipantsListView: View {
                     }
                 }
                 
-                Section(footer: VStack(alignment: .center) {
+                Section(footer: VStack(alignment: .center, spacing: 20) {
                     if viewModel.currentUserIsAdmin {
                         HStack{
                             Spacer()
-                            Button("START THE GAME") {
+                            
+                            Button {
                                 Task{
                                    await viewModel.generateMomChild()
                                 }
+                            } label: {
+                                Text("START THE GAME")
+                                    .fontWeight(.bold)
+                                    .padding()
+                                    .frame(maxWidth: .infinity)
+                                    .background(viewModel.participantsList.count < 3 || viewModel.isGameStarted ? Color.gray: Color.blue)
+                                    .opacity(viewModel.participantsList.count < 3 || viewModel.isGameStarted ? 0.5: 1)
+                                    .foregroundColor(.white)
+                                    .cornerRadius(10)
+                                    
                             }
-                            .font(.caption)
-                             .padding()
-                             .buttonStyle(.borderedProminent)
                              .disabled(viewModel.participantsList.count < 3 || viewModel.isGameStarted)
                             Spacer()
                         }
                         HStack{
                             Spacer()
-                            Button("RESET THE GAME") {
+                            Button {
                                 Task{
                                     await viewModel.resetGame()
                                 }
+                            } label: {
+                                Text("RESET THE GAME")
+                                    .fontWeight(.bold)
+                                    .padding()
+                                    .frame(maxWidth: .infinity)
+                                    .background(!viewModel.isGameStarted ? Color.gray : Color.blue)
+                                    .foregroundColor(.white)
+                                    .opacity(!viewModel.isGameStarted ? 0.5: 1)
+                                    .cornerRadius(10)
                             }
-                            .font(.caption)
-                            .padding()
-                             .buttonStyle(.borderedProminent)
+                           
+                             //.buttonStyle(.borderedProminent)
                              .disabled(!viewModel.isGameStarted)
                             Spacer()
                         }
