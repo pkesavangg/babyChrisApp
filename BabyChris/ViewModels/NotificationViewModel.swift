@@ -70,8 +70,9 @@ class NotificationViewModel: ObservableObject {
         toastCancellable = toastEventsSubject.sink(receiveValue: { value in
             let isSheetModal = value.isSheetModel ?? false
             if !isSheetModal {
-                self.showToast = false
+               
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                    self.showToast = false
                     withAnimation(Animation.spring()) {
                         self.showToast = true
                         self.toastData = value.toastData
