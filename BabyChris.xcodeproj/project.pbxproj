@@ -44,6 +44,7 @@
 		D069634729D82C6300322AEF /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D069634629D82C6200322AEF /* Launch Screen.storyboard */; };
 		D069634929D82E1F00322AEF /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D069634829D82E1F00322AEF /* LoginViewModel.swift */; };
 		D06E538829D8ACDD003A8ECE /* AppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06E538729D8ACDD003A8ECE /* AppStrings.swift */; };
+		D070E0662B1637B100ED2370 /* gift-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D070E0652B1637B100ED2370 /* gift-icon.png */; };
 		D0C3119429D95AC70062696F /* GameInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C3119329D95AC70062696F /* GameInfoView.swift */; };
 		D0C5287129C9896000267B55 /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C5287029C9896000267B55 /* AccountService.swift */; };
 		D0C5287329C989B100267B55 /* GameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C5287229C989B100267B55 /* GameService.swift */; };
@@ -72,7 +73,7 @@
 		D018A53229E13BAE0010F51B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D018A53429E13FD80010F51B /* UserDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailModel.swift; sourceTree = "<group>"; };
 		D018A53829E164070010F51B /* GameInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInfoViewModel.swift; sourceTree = "<group>"; };
-		D0460F5B29C976FC004441D0 /* BabyChris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabyChris.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0460F5B29C976FC004441D0 /* Secret Santa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Secret Santa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0460F5E29C976FC004441D0 /* BabyChrisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyChrisApp.swift; sourceTree = "<group>"; };
 		D0460F6029C976FC004441D0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D0460F6229C976FD004441D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -92,6 +93,8 @@
 		D069634629D82C6200322AEF /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		D069634829D82E1F00322AEF /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		D06E538729D8ACDD003A8ECE /* AppStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStrings.swift; sourceTree = "<group>"; };
+		D070E0652B1637B100ED2370 /* gift-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gift-icon.png"; sourceTree = "<group>"; };
+		D0B42F972B272E5700F8B65C /* Secret Santa.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Secret Santa.entitlements"; sourceTree = "<group>"; };
 		D0C3119329D95AC70062696F /* GameInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInfoView.swift; sourceTree = "<group>"; };
 		D0C5287029C9896000267B55 /* AccountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
 		D0C5287229C989B100267B55 /* GameService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameService.swift; sourceTree = "<group>"; };
@@ -118,6 +121,7 @@
 		D0460F5229C976FC004441D0 = {
 			isa = PBXGroup;
 			children = (
+				D0B42F972B272E5700F8B65C /* Secret Santa.entitlements */,
 				D0460F5D29C976FC004441D0 /* BabyChris */,
 				D0460F5C29C976FC004441D0 /* Products */,
 				FC9B109A4DACF8D43D0933F0 /* Pods */,
@@ -128,7 +132,7 @@
 		D0460F5C29C976FC004441D0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D0460F5B29C976FC004441D0 /* BabyChris.app */,
+				D0460F5B29C976FC004441D0 /* Secret Santa.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -178,6 +182,7 @@
 		D06112AF2A4FE082004AA435 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D070E0652B1637B100ED2370 /* gift-icon.png */,
 				D06112B02A4FE0A7004AA435 /* 1024.png */,
 			);
 			path = Images;
@@ -298,9 +303,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D0460F5A29C976FC004441D0 /* BabyChris */ = {
+		D0460F5A29C976FC004441D0 /* Secret Santa */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D0460F6E29C976FD004441D0 /* Build configuration list for PBXNativeTarget "BabyChris" */;
+			buildConfigurationList = D0460F6E29C976FD004441D0 /* Build configuration list for PBXNativeTarget "Secret Santa" */;
 			buildPhases = (
 				E78175CBAB6B408A30DB6AAB /* [CP] Check Pods Manifest.lock */,
 				D0460F5729C976FC004441D0 /* Sources */,
@@ -312,12 +317,12 @@
 			);
 			dependencies = (
 			);
-			name = BabyChris;
+			name = "Secret Santa";
 			packageProductDependencies = (
 				D04AD9D629D80B36003D263F /* AlertToast */,
 			);
 			productName = BabyChris;
-			productReference = D0460F5B29C976FC004441D0 /* BabyChris.app */;
+			productReference = D0460F5B29C976FC004441D0 /* Secret Santa.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -352,7 +357,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D0460F5A29C976FC004441D0 /* BabyChris */,
+				D0460F5A29C976FC004441D0 /* Secret Santa */,
 			);
 		};
 /* End PBXProject section */
@@ -364,6 +369,7 @@
 			files = (
 				D0460F6629C976FD004441D0 /* Preview Assets.xcassets in Resources */,
 				D069634729D82C6300322AEF /* Launch Screen.storyboard in Resources */,
+				D070E0662B1637B100ED2370 /* gift-icon.png in Resources */,
 				D06112B12A4FE0A7004AA435 /* 1024.png in Resources */,
 				D0460F6329C976FD004441D0 /* Assets.xcassets in Resources */,
 				D018A53329E13BAE0010F51B /* GoogleService-Info.plist in Resources */,
@@ -582,16 +588,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Secret Santa.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"BabyChris/Preview Content\"";
-				DEVELOPMENT_TEAM = FK46LLGFK4;
+				DEVELOPMENT_TEAM = PX369MG78T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -599,9 +608,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kesavan.BabyChris;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.greatergoods.secretsanta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -614,16 +624,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Secret Santa.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"BabyChris/Preview Content\"";
-				DEVELOPMENT_TEAM = FK46LLGFK4;
+				DEVELOPMENT_TEAM = PX369MG78T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -631,9 +644,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kesavan.BabyChris;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.greatergoods.secretsanta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -652,7 +666,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D0460F6E29C976FD004441D0 /* Build configuration list for PBXNativeTarget "BabyChris" */ = {
+		D0460F6E29C976FD004441D0 /* Build configuration list for PBXNativeTarget "Secret Santa" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D0460F6F29C976FD004441D0 /* Debug */,
