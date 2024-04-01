@@ -68,6 +68,7 @@ struct ParticipantsListView: View {
                 }
             }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

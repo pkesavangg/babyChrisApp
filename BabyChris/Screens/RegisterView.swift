@@ -111,7 +111,9 @@ struct RegisterView: View {
                 viewModel.validateForm()
             }
             .resignOnDrag()
-        }.navigationTitle(CommonConstants.register)
+        }
+        .navigationTitle(CommonConstants.register)
+            .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

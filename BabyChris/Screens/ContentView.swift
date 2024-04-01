@@ -22,9 +22,11 @@ struct ContentView: View {
             }else{
                 if(!accountService.isLoggedIn){
                     LandingView()
+                        .navigationViewStyle(StackNavigationViewStyle())
                 }
                 else {
                     MainView()
+                        .navigationViewStyle(StackNavigationViewStyle())
                 }
             }
         }
@@ -55,7 +57,9 @@ struct ContentView: View {
         .toast(isPresenting: $viewModel.showLoader) {
             AlertToast(type: .loading, title: viewModel.loaderMessage)
         }
+        
     }
+        .navigationViewStyle(StackNavigationViewStyle())
 }
 }
 

@@ -85,6 +85,7 @@ struct LoginView: View {
             .resignOnDrag()
         }
         .navigationTitle(CommonConstants.login)
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
