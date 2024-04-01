@@ -24,7 +24,7 @@ class SettingsViewModel: ObservableObject {
     }
     
     func getAdminDetail() -> UserDetailModel? {
-        return self.gameService.userDetails[0]
+        return self.gameService.userDetails.filter({$0.isParticipating})[0]
     }
     
     

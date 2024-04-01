@@ -48,9 +48,9 @@ struct InputField: View {
                             TextField("\(placeholder)", text: $value, onEditingChanged: editingChanged, onCommit: commit)
                         }
                         if inputType == InputType.password {
-                            Image(showPasswordEyeIcon ? "eye.fill" : "eye.slash.fill")
-                                .resizable()
-                                .frame(width: 20, height: 20)
+                            Image(systemName:  showPasswordEyeIcon ? "eye.fill" : "eye.slash.fill")
+ //                               .resizable()
+//                                .frame(width: 20, height: 20)
                                 .accentColor(.gray)
                                 .padding(.trailing, 10)
                                 .onTapGesture {

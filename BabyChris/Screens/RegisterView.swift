@@ -69,13 +69,26 @@ struct RegisterView: View {
                                    errorMessage: self.viewModel.confirmPassword.errorMessage,
                                    passwordMatchingErrorMessage: "",
                                    editingChanged: { isEditing in
-                            self.viewModel.confirmPassword.isTouched = true
+                            DispatchQueue.main.async {
+                                self.viewModel.confirmPassword.isTouched = true
+                            }
                             if (!isEditing){
-                                self.viewModel.confirmPassword.isUnfocused = true
+                                DispatchQueue.main.async {
+                                    self.viewModel.confirmPassword.isUnfocused = true
+                                }
                             }},commit: { focus = nil})
                         .focused($focus , equals: .confirmPassword)
                         .submitLabel(.done)
                     }
+                    HStack {
+                        Text("NOTE:")
+                            .fontWeight(.bold)
+                        Text("Ensure you do not forget your password.")
+                    }
+                    
+                    .listRowSeparator(.hidden)
+                    .font(.footnote)
+                    
                     HStack{
                         Spacer()
                         Button {
@@ -98,7 +111,9 @@ struct RegisterView: View {
                                     .opacity(viewModel.isFormValid ? 1: 0.6)
                                 Spacer()
                             }
-                        }.disabled(!viewModel.isFormValid)
+                        }
+                        .disabled(!viewModel.isFormValid)
+                        
                         Spacer()
                     }
                     .listRowSeparator(.hidden)

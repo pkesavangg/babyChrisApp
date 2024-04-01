@@ -40,9 +40,9 @@ struct LoaderMessages {
 }
 
 struct GameInfoConstants {
-    static let welcomeText = "Welcome Kesavan to the chris mom chris child game"
-    static let gameInfoText = "Engage in the Chris mom Chris child game as a means to break out of your shell, foster mutual understanding of each other's preferences, and follow the provided prompts to overcome shyness."
-    static let learnAboutGame = "Learn more about chris mom chris child"
+    static let welcomeText = "Welcome, to the Secret Santa game!"
+    static let gameInfoText = "Engage in the Secret Santa game as a means to break out of your shell, foster mutual understanding of each other's preferences, and follow the provided prompts to overcome shyness."
+    static let learnAboutGame = "Learn more about Secret Santa game"
     
 }
 

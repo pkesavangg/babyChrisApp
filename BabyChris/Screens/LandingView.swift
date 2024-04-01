@@ -20,21 +20,22 @@ struct LandingView: View {
                         .edgesIgnoringSafeArea(.all)
                     VStack {
                         HStack{
-                            Image("Logo")
+                            Image("gift-icon")
                                 .resizable()
                                 .frame(maxWidth: min(geometry.size.width, 200),
                                        maxHeight:min(geometry.size.width, 200))
                                 .aspectRatio(contentMode: .fit)
                                 .clipShape(RoundedRectangle(cornerRadius: 15))
-                        }.padding(.top,100)
+                        }
+                        .padding(.top,100)
                         Spacer()
                         VStack(spacing: 30) {
                             HStack{
                                 NavigationLink( destination: RegisterView(), isActive: $showRegisterView) {
                                     LandingButtonView(geometryWidth: geometry.size.width,
                                                       geometryHeight: geometry.size.height,
-                                                      foregroundColor: "ColorPrimary",
-                                                      backgroundColor: "ColorPrimary",
+                                                      foregroundColor: Color(.white),
+                                                      backgroundColor: Color("ColorButton"),
                                                       buttonText: CommonConstants.register.uppercased()){
                                         self.showRegisterView = true
                                     }
@@ -44,14 +45,15 @@ struct LandingView: View {
                                 NavigationLink( destination: LoginView(), isActive: $showLoginView){
                                     LandingButtonView(geometryWidth: geometry.size.width,
                                                       geometryHeight: geometry.size.height,
-                                                      foregroundColor: "ColorText",
-                                                      backgroundColor: "ColorSecondary",
+                                                      foregroundColor: Color(.white),
+                                                      backgroundColor: Color("ColorButton"),
                                                       buttonText: CommonConstants.login.uppercased()){
                                         self.showLoginView = true
                                     }
                                 }
                             }
                         }
+                        .padding(.bottom, 100)
                         Spacer()
                     }
                 }

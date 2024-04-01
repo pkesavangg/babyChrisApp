@@ -44,7 +44,7 @@ struct MainView: View {
                     }
                 }
             }
-            .navigationBarTitle("Baby Chris", displayMode: .inline)
+            .navigationBarTitle("Secret Santa", displayMode: .inline)
         }
     }
 }

@@ -24,7 +24,6 @@ class RegisterViewModel : ObservableObject {
     
     
     func validateForm() {
-        
         if let value = self.formValidator.validate(self.userName.value, validators: [EmptySpaceValidator()]).error?.errorMessage {
             self.userName.isValid = false
             self.userName.errorMessage = self.userName.isTouched ? value : ""
@@ -32,7 +31,6 @@ class RegisterViewModel : ObservableObject {
             self.userName.isValid = true
             self.userName.errorMessage = ""
         }
-        
         
         if let value = self.formValidator.validate(self.email.value, validators: [EmailValidator()]).error?.errorMessage {
             self.email.isValid = false
