@@ -30,7 +30,6 @@
 		D0460F6629C976FD004441D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0460F6529C976FD004441D0 /* Preview Assets.xcassets */; };
 		D0460F6829C976FD004441D0 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0460F6729C976FD004441D0 /* Persistence.swift */; };
 		D0460F6B29C976FD004441D0 /* BabyChris.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D0460F6929C976FD004441D0 /* BabyChris.xcdatamodeld */; };
-		D0460F7529C97A33004441D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0460F7429C97A33004441D0 /* AppDelegate.swift */; };
 		D04AD9CF29D7FA3D003D263F /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04AD9CE29D7FA3D003D263F /* Protocols.swift */; };
 		D04AD9D729D80B36003D263F /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = D04AD9D629D80B36003D263F /* AlertToast */; };
 		D051C91029F4F45F001CBC5D /* ParticipantsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D051C90F29F4F45F001CBC5D /* ParticipantsListView.swift */; };
@@ -45,6 +44,7 @@
 		D069634929D82E1F00322AEF /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D069634829D82E1F00322AEF /* LoginViewModel.swift */; };
 		D06E538829D8ACDD003A8ECE /* AppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06E538729D8ACDD003A8ECE /* AppStrings.swift */; };
 		D070E0662B1637B100ED2370 /* gift-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D070E0652B1637B100ED2370 /* gift-icon.png */; };
+		D0AC0C212BC1271B00B9DDB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AC0C202BC1271600B9DDB0 /* AppDelegate.swift */; };
 		D0C3119429D95AC70062696F /* GameInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C3119329D95AC70062696F /* GameInfoView.swift */; };
 		D0C5287129C9896000267B55 /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C5287029C9896000267B55 /* AccountService.swift */; };
 		D0C5287329C989B100267B55 /* GameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C5287229C989B100267B55 /* GameService.swift */; };
@@ -80,7 +80,6 @@
 		D0460F6529C976FD004441D0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D0460F6729C976FD004441D0 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		D0460F6A29C976FD004441D0 /* BabyChris.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BabyChris.xcdatamodel; sourceTree = "<group>"; };
-		D0460F7429C97A33004441D0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "../../chris-mom-game/chris-mom-game/views/AppDelegate.swift"; sourceTree = "<group>"; };
 		D04AD9CE29D7FA3D003D263F /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		D051C90F29F4F45F001CBC5D /* ParticipantsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantsListView.swift; sourceTree = "<group>"; };
 		D051C91129F5077F001CBC5D /* DareListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DareListView.swift; sourceTree = "<group>"; };
@@ -94,6 +93,7 @@
 		D069634829D82E1F00322AEF /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		D06E538729D8ACDD003A8ECE /* AppStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStrings.swift; sourceTree = "<group>"; };
 		D070E0652B1637B100ED2370 /* gift-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gift-icon.png"; sourceTree = "<group>"; };
+		D0AC0C202BC1271600B9DDB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0B42F972B272E5700F8B65C /* Secret Santa.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Secret Santa.entitlements"; sourceTree = "<group>"; };
 		D0C3119329D95AC70062696F /* GameInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInfoView.swift; sourceTree = "<group>"; };
 		D0C5287029C9896000267B55 /* AccountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
@@ -152,10 +152,10 @@
 				D0C5286829C9877E00267B55 /* Screens */,
 				D0460F5E29C976FC004441D0 /* BabyChrisApp.swift */,
 				D0C3119329D95AC70062696F /* GameInfoView.swift */,
+				D0AC0C202BC1271600B9DDB0 /* AppDelegate.swift */,
 				D0460F6229C976FD004441D0 /* Assets.xcassets */,
 				D0460F6729C976FD004441D0 /* Persistence.swift */,
 				D0460F6929C976FD004441D0 /* BabyChris.xcdatamodeld */,
-				D0460F7429C97A33004441D0 /* AppDelegate.swift */,
 				D0460F6429C976FD004441D0 /* Preview Content */,
 				D069634629D82C6200322AEF /* Launch Screen.storyboard */,
 				D018A53229E13BAE0010F51B /* GoogleService-Info.plist */,
@@ -438,6 +438,7 @@
 				D0173EAC29D736D00095BB51 /* ConstantValues.swift in Sources */,
 				D069634329D8270300322AEF /* CommonUtils.swift in Sources */,
 				D0C5287329C989B100267B55 /* GameService.swift in Sources */,
+				D0AC0C212BC1271B00B9DDB0 /* AppDelegate.swift in Sources */,
 				D0C80A622A51247300AB2258 /* SettingsViewModel.swift in Sources */,
 				D018A53529E13FD80010F51B /* UserDetailModel.swift in Sources */,
 				D018A52D29E132940010F51B /* LoadingView.swift in Sources */,
@@ -452,7 +453,6 @@
 				D06E538829D8ACDD003A8ECE /* AppStrings.swift in Sources */,
 				D0C5287129C9896000267B55 /* AccountService.swift in Sources */,
 				D0173EA029D730C30095BB51 /* RegisterViewModel.swift in Sources */,
-				D0460F7529C97A33004441D0 /* AppDelegate.swift in Sources */,
 				D0E618F129E5ABFF00E9EA22 /* MainViewModel.swift in Sources */,
 				D051C91429F50CEA001CBC5D /* SendingDareView.swift in Sources */,
 				D018A53929E164070010F51B /* GameInfoViewModel.swift in Sources */,
