@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_BabyChrisVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_BabyChrisVersionString[];
+FOUNDATION_EXPORT double Pods_Secret_SantaVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_Secret_SantaVersionString[];
 
