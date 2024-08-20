@@ -23,6 +23,7 @@ struct CommonConstants {
     static let register = "Register"
     static let login = "Log In"
     static let signIn = "Sign In"
+    static let signUp = "Sign Up"
     static let required = "Required"
     static let username = "User name"
     static let email = "Email"

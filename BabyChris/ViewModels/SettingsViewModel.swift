@@ -24,7 +24,10 @@ class SettingsViewModel: ObservableObject {
     }
     
     func getAdminDetail() -> UserDetailModel? {
-        return self.gameService.userDetails.filter({$0.isParticipating})[0]
+        if self.gameService.userDetails.filter({$0.isParticipating}).count > 0 {
+            return self.gameService.userDetails.filter({$0.isParticipating})[0]
+        }
+       return nil
     }
     
     

@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+
+enum ViewTag {
+    case registerView
+    case loginView
+}

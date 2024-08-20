@@ -43,6 +43,21 @@ class AccountService: ObservableObject {
         }
     }
     
+    func forgotPassward(email: String) async throws -> Bool? {
+        return try await withCheckedThrowingContinuation { continuation in
+            Auth.auth().sendPasswordReset(withEmail: email) { error in
+                if let errorValue = error {
+                    print(errorValue, "errorValue")
+                    continuation.resume(throwing: errorValue)
+                }
+                else {
+                    continuation.resume(returning: true)
+                }
+            }
+        }
+       
+    }
+    
     //Login to already created accoutn.
     func accountSignIn(email: String, password: String) async throws -> AuthDataResult? {
         return try await withCheckedThrowingContinuation { continuation in
