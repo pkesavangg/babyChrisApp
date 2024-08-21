@@ -53,10 +53,11 @@ class MainViewModel: ObservableObject {
             return false
         }
         print(currentUserMailId, self.userDetails[0].userMailId,currentUserMailId ==  self.userDetails[0].userMailId)
-        if currentUserMailId ==  self.gameService.userDetails.filter({$0.isParticipating})[0].userMailId {
-            return true
+        if let participatingUser = self.gameService.userDetails.first(where: { $0.isParticipating }) {
+            return currentUserMailId == participatingUser.userMailId
         }
         return false
+
     }
     
     var participantsList: [UserDetailModel] {

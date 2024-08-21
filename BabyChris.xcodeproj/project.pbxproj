@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2ECEA94EF0F6CA37DB79F6FD /* Pods_BabyChris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32171DFBF93BD158A3192D05 /* Pods_BabyChris.framework */; };
+		9CC63BD01550616464E6DEEB /* Pods_Secret_Santa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B0DB207AC82DEAF8AC8F309 /* Pods_Secret_Santa.framework */; };
 		D0173EA029D730C30095BB51 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0173E9F29D730C30095BB51 /* RegisterViewModel.swift */; };
 		D0173EA229D730D50095BB51 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0173EA129D730D50095BB51 /* RegisterView.swift */; };
 		D0173EA429D732110095BB51 /* CustomInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0173EA329D732110095BB51 /* CustomInputField.swift */; };
@@ -56,8 +56,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		32171DFBF93BD158A3192D05 /* Pods_BabyChris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BabyChris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7069A3D1F4297596FBDC31AB /* Pods-Secret Santa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Secret Santa.release.xcconfig"; path = "Target Support Files/Pods-Secret Santa/Pods-Secret Santa.release.xcconfig"; sourceTree = "<group>"; };
 		991E07E5EF663855D7FC6499 /* Pods-BabyChris.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabyChris.debug.xcconfig"; path = "Target Support Files/Pods-BabyChris/Pods-BabyChris.debug.xcconfig"; sourceTree = "<group>"; };
+		9B0DB207AC82DEAF8AC8F309 /* Pods_Secret_Santa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Secret_Santa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6D9A18AA5F3BB349D339363 /* Pods-Secret Santa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Secret Santa.debug.xcconfig"; path = "Target Support Files/Pods-Secret Santa/Pods-Secret Santa.debug.xcconfig"; sourceTree = "<group>"; };
 		D0173E9F29D730C30095BB51 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		D0173EA129D730D50095BB51 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		D0173EA329D732110095BB51 /* CustomInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputField.swift; sourceTree = "<group>"; };
@@ -112,8 +114,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2ECEA94EF0F6CA37DB79F6FD /* Pods_BabyChris.framework in Frameworks */,
 				D04AD9D729D80B36003D263F /* AlertToast in Frameworks */,
+				9CC63BD01550616464E6DEEB /* Pods_Secret_Santa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +299,7 @@
 		EEEEBB7D403502B3B983CB33 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				32171DFBF93BD158A3192D05 /* Pods_BabyChris.framework */,
+				9B0DB207AC82DEAF8AC8F309 /* Pods_Secret_Santa.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -307,6 +309,8 @@
 			children = (
 				991E07E5EF663855D7FC6499 /* Pods-BabyChris.debug.xcconfig */,
 				F496B5D3A4128640014154EF /* Pods-BabyChris.release.xcconfig */,
+				A6D9A18AA5F3BB349D339363 /* Pods-Secret Santa.debug.xcconfig */,
+				7069A3D1F4297596FBDC31AB /* Pods-Secret Santa.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -396,15 +400,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BabyChris/Pods-BabyChris-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Secret Santa/Pods-Secret Santa-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BabyChris/Pods-BabyChris-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Secret Santa/Pods-Secret Santa-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BabyChris/Pods-BabyChris-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Secret Santa/Pods-Secret Santa-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E78175CBAB6B408A30DB6AAB /* [CP] Check Pods Manifest.lock */ = {
@@ -422,7 +426,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BabyChris-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Secret Santa-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -596,7 +600,7 @@
 		};
 		D0460F6F29C976FD004441D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 991E07E5EF663855D7FC6499 /* Pods-BabyChris.debug.xcconfig */;
+			baseConfigurationReference = A6D9A18AA5F3BB349D339363 /* Pods-Secret Santa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -632,7 +636,7 @@
 		};
 		D0460F7029C976FD004441D0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F496B5D3A4128640014154EF /* Pods-BabyChris.release.xcconfig */;
+			baseConfigurationReference = 7069A3D1F4297596FBDC31AB /* Pods-Secret Santa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
