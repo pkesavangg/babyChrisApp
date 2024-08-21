@@ -44,6 +44,7 @@
 		D069634929D82E1F00322AEF /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D069634829D82E1F00322AEF /* LoginViewModel.swift */; };
 		D06E538829D8ACDD003A8ECE /* AppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06E538729D8ACDD003A8ECE /* AppStrings.swift */; };
 		D070E0662B1637B100ED2370 /* gift-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D070E0652B1637B100ED2370 /* gift-icon.png */; };
+		D09881EB2BDE2BFC00757C75 /* ViewTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09881EA2BDE2BFC00757C75 /* ViewTags.swift */; };
 		D0AC0C212BC1271B00B9DDB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AC0C202BC1271600B9DDB0 /* AppDelegate.swift */; };
 		D0C3119429D95AC70062696F /* GameInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C3119329D95AC70062696F /* GameInfoView.swift */; };
 		D0C5287129C9896000267B55 /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C5287029C9896000267B55 /* AccountService.swift */; };
@@ -93,6 +94,7 @@
 		D069634829D82E1F00322AEF /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		D06E538729D8ACDD003A8ECE /* AppStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStrings.swift; sourceTree = "<group>"; };
 		D070E0652B1637B100ED2370 /* gift-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gift-icon.png"; sourceTree = "<group>"; };
+		D09881EA2BDE2BFC00757C75 /* ViewTags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTags.swift; sourceTree = "<group>"; };
 		D0AC0C202BC1271600B9DDB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0B42F972B272E5700F8B65C /* Secret Santa.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Secret Santa.entitlements"; sourceTree = "<group>"; };
 		D0C3119329D95AC70062696F /* GameInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInfoView.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 		D0460F5D29C976FC004441D0 /* BabyChris */ = {
 			isa = PBXGroup;
 			children = (
+				D09881E92BDE2BDA00757C75 /* enums */,
 				D06112AF2A4FE082004AA435 /* Images */,
 				D04AD9CD29D7FA2D003D263F /* Delegates */,
 				D0C5286F29C9880700267B55 /* Validators */,
@@ -186,6 +189,14 @@
 				D06112B02A4FE0A7004AA435 /* 1024.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		D09881E92BDE2BDA00757C75 /* enums */ = {
+			isa = PBXGroup;
+			children = (
+				D09881EA2BDE2BFC00757C75 /* ViewTags.swift */,
+			);
+			path = enums;
 			sourceTree = "<group>";
 		};
 		D0C5286829C9877E00267B55 /* Screens */ = {
@@ -440,6 +451,7 @@
 				D0C5287329C989B100267B55 /* GameService.swift in Sources */,
 				D0AC0C212BC1271B00B9DDB0 /* AppDelegate.swift in Sources */,
 				D0C80A622A51247300AB2258 /* SettingsViewModel.swift in Sources */,
+				D09881EB2BDE2BFC00757C75 /* ViewTags.swift in Sources */,
 				D018A53529E13FD80010F51B /* UserDetailModel.swift in Sources */,
 				D018A52D29E132940010F51B /* LoadingView.swift in Sources */,
 				D0460F6B29C976FD004441D0 /* BabyChris.xcdatamodeld in Sources */,

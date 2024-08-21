@@ -10,7 +10,7 @@ import SwiftUI
 struct RegisterView: View {
     @StateObject var viewModel = RegisterViewModel()
     @FocusState private var focus : FocusText?
-    
+    @Binding var currentViewTag: ViewTag?
     var body: some View {
         VStack{
             Form{
@@ -80,14 +80,7 @@ struct RegisterView: View {
                         .focused($focus , equals: .confirmPassword)
                         .submitLabel(.done)
                     }
-                    HStack {
-                        Text("NOTE:")
-                            .fontWeight(.bold)
-                        Text("Ensure you do not forget your password.")
-                    }
-                    
-                    .listRowSeparator(.hidden)
-                    .font(.footnote)
+
                     
                     HStack{
                         Spacer()
@@ -100,7 +93,7 @@ struct RegisterView: View {
                         } label: {
                             HStack{
                                 Spacer()
-                                Text("\(CommonConstants.register.uppercased()) \(Image(systemName: "arrow.right"))")
+                                Text("\(CommonConstants.signUp.uppercased()) \(Image(systemName: "arrow.right"))")
                                     .foregroundColor(Color("ColorWhite"))
                                     .clipShape(Rectangle())
                                     .frame(width: 300, height: 50)
@@ -117,6 +110,20 @@ struct RegisterView: View {
                         Spacer()
                     }
                     .listRowSeparator(.hidden)
+                    
+                    HStack {
+                        Spacer()
+                        Text("Already have an account")
+                            .fontWeight(.bold)
+                            .foregroundColor(Color("ColorButton"))
+                            .font(.footnote)
+                            .onTapGesture {
+                                self.currentViewTag = ViewTag.loginView
+                            }
+                        Spacer()
+                    }
+                    
+                    
                 }
             }
             .onReceive(NotificationCenter.default.publisher(for: UITextField.textDidBeginEditingNotification)) { _ in
@@ -134,6 +141,6 @@ struct RegisterView: View {
 
 struct RegisterView_Previews: PreviewProvider {
     static var previews: some View {
-        RegisterView()
+        RegisterView(currentViewTag: .constant(ViewTag.registerView))
     }
 }
