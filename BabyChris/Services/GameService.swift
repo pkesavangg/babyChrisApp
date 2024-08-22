@@ -133,7 +133,7 @@ class GameService: ObservableObject {
     func generateMomAndChild() async throws -> Bool? {
         var completionCount = 0
         var error: Error?
-        let result: Bool?
+        var result: Bool?
         return try await withCheckedThrowingContinuation { continuation in
             var checkFlag = true
             
