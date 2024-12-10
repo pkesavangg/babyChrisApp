@@ -39,9 +39,10 @@ class GameService: ObservableObject {
     }
     
     func getCurrentUserMailId() -> String{
-        if let currentUserUid = Auth.auth().currentUser?.email{
+        if let currentUserUid = Auth.auth().currentUser?.email {
             return currentUserUid
         }
+        AccountService.shared.logout()
         return ""
     }
     
@@ -110,6 +111,10 @@ class GameService: ObservableObject {
                             }                        }
                         loaderEventSubject.send(LoaderModel(showLoader: false))
                     }
+                }
+                
+                if ((self.currentUserInfo == nil)) {
+                    AccountService.shared.logout()
                 }
             }
     }

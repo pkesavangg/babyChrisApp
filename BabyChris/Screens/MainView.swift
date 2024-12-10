@@ -15,7 +15,7 @@ struct MainView: View {
             VStack{
                 if viewModel.isParticipating == nil {
                     ProgressView()
-                }else{
+                } else {
                     if let isParticipating = viewModel.isParticipating {
                         if(!isParticipating) {
                             GameInfoView()

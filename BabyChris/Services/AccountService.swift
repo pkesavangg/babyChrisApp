@@ -24,6 +24,9 @@ class AccountService: ObservableObject {
             self.isLoggedIn = true
             self.isLoading = false
         }
+        else {
+            self.logout()
+        }
         self.isLoading = false
     }
     
